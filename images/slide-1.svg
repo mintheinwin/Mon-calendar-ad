@@ -1,0 +1,37 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#grad1)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="80" r="60" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="700" cy="300" r="80" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Product showcase box -->
+  <rect x="150" y="80" width="200" height="240" fill="white" rx="10"/>
+  <rect x="160" y="90" width="180" height="150" fill="#f0f0f0" rx="5"/>
+  
+  <!-- Simple product icon -->
+  <circle cx="250" cy="165" r="40" fill="#667eea"/>
+  <polygon points="250,135 280,165 250,195 220,165" fill="white"/>
+  
+  <!-- Product text -->
+  <text x="250" y="280" font-size="24" font-weight="bold" fill="#333" text-anchor="middle">Premium</text>
+  <text x="250" y="310" font-size="14" fill="#666" text-anchor="middle">Product 2024</text>
+  
+  <!-- Main headline -->
+  <text x="500" y="120" font-size="48" font-weight="bold" fill="white">NEW</text>
+  <text x="500" y="170" font-size="36" font-weight="bold" fill="white">Collection</text>
+  <text x="500" y="210" font-size="28" fill="white">Exclusive Design</text>
+  
+  <!-- Call to action text -->
+  <text x="500" y="270" font-size="18" fill="white">Limited Stock Available</text>
+  <rect x="420" y="285" width="160" height="45" fill="white" rx="5"/>
+  <text x="500" y="316" font-size="16" font-weight="bold" fill="#667eea" text-anchor="middle">DISCOVER NOW</text>
+</svg>

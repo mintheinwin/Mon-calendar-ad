@@ -1,0 +1,39 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#grad2)"/>
+  
+  <!-- Discount badge background -->
+  <circle cx="700" cy="80" r="70" fill="white" opacity="0.95"/>
+  
+  <!-- Discount percentage -->
+  <text x="700" y="70" font-size="48" font-weight="bold" fill="#f5576c" text-anchor="middle">50%</text>
+  <text x="700" y="105" font-size="18" fill="#333" text-anchor="middle">OFF</text>
+  
+  <!-- Left side content -->
+  <text x="40" y="80" font-size="52" font-weight="bold" fill="white">SUMMER</text>
+  <text x="40" y="140" font-size="52" font-weight="bold" fill="white">SALE</text>
+  
+  <!-- Wavy line separator -->
+  <path d="M 40 160 Q 150 150, 260 160" stroke="white" stroke-width="3" fill="none"/>
+  
+  <!-- Description -->
+  <text x="40" y="210" font-size="20" fill="white">Shop the hottest styles</text>
+  <text x="40" y="240" font-size="20" fill="white">of the season at</text>
+  <text x="40" y="270" font-size="20" fill="white">unbeatable prices!</text>
+  
+  <!-- CTA Button -->
+  <rect x="40" y="310" width="180" height="50" fill="white" rx="25"/>
+  <text x="130" y="340" font-size="18" font-weight="bold" fill="#f5576c" text-anchor="middle">SHOP NOW</text>
+  
+  <!-- Decorative stars -->
+  <text x="500" y="100" font-size="30" fill="white">★ ★ ★</text>
+  <text x="520" y="300" font-size="25" fill="white">★</text>
+  <text x="650" y="320" font-size="25" fill="white">★</text>
+</svg>

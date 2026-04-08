@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ad-container">
+        <div class="slideshow-wrapper">
+            <!-- Slides -->
+            <div class="slides-container">
+                <div class="slide fade">
+                    <img src="images/slide-1.svg" alt="Product 1">
+                    <div class="slide-caption">Premium Product Collection 2024</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/slide-2.svg" alt="Product 2">
+                    <div class="slide-caption">Summer Sale - 50% Off</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/slide-3.svg" alt="Product 3">
+                    <div class="slide-caption">Summer Collection Launch</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/slide-4.svg" alt="Product 4">
+                    <div class="slide-caption">Limited Time Offer - Act Now!</div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="images/slide-5.svg" alt="Product 5">
+                    <div class="slide-caption">Exclusive Member Benefits</div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots for slide indicators -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <!-- Call to Action Button -->
+        <div class="cta-section">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

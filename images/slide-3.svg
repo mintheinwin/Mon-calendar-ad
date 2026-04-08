@@ -1,0 +1,38 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#grad3)"/>
+  
+  <!-- Decorative shapes -->
+  <rect x="0" y="0" width="400" height="400" fill="white" opacity="0.1"/>
+  <circle cx="650" cy="100" r="50" fill="white" opacity="0.15"/>
+  
+  <!-- Main headline -->
+  <text x="400" y="80" font-size="56" font-weight="bold" fill="white" text-anchor="middle">SUMMER</text>
+  <text x="400" y="150" font-size="56" font-weight="bold" fill="white" text-anchor="middle">LAUNCH</text>
+  
+  <!-- Subheading -->
+  <text x="400" y="200" font-size="24" fill="white" text-anchor="middle">Experience the Future of Style</text>
+  
+  <!-- Feature boxes -->
+  <rect x="100" y="230" width="160" height="120" fill="white" opacity="0.2" rx="10"/>
+  <text x="180" y="260" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Fast Shipping</text>
+  <text x="180" y="285" font-size="14" fill="white" text-anchor="middle">48-hour delivery</text>
+  <text x="180" y="335" font-size="28" fill="white" text-anchor="middle">⚡</text>
+  
+  <rect x="320" y="230" width="160" height="120" fill="white" opacity="0.2" rx="10"/>
+  <text x="400" y="260" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Quality</text>
+  <text x="400" y="285" font-size="14" fill="white" text-anchor="middle">Premium materials</text>
+  <text x="400" y="335" font-size="28" fill="white" text-anchor="middle">✓</text>
+  
+  <rect x="540" y="230" width="160" height="120" fill="white" opacity="0.2" rx="10"/>
+  <text x="620" y="260" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Support</text>
+  <text x="620" y="285" font-size="14" fill="white" text-anchor="middle">24/7 Available</text>
+  <text x="620" y="335" font-size="28" fill="white" text-anchor="middle">💬</text>
+</svg>

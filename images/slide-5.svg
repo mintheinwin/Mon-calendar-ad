@@ -1,0 +1,45 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#grad5)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="150" cy="150" r="40" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="700" cy="250" r="50" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Main title -->
+  <text x="400" y="70" font-size="44" font-weight="bold" fill="white" text-anchor="middle">GROW YOUR BUSINESS</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="110" font-size="24" fill="#90caf9" text-anchor="middle">Advertise with Us Today</text>
+  
+  <!-- Divider line -->
+  <line x1="150" y1="135" x2="650" y2="135" stroke="white" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Contact section box -->
+  <rect x="100" y="160" width="600" height="180" fill="white" opacity="0.95" rx="15"/>
+  
+  <!-- Contact icon and label -->
+  <circle cx="150" cy="210" r="25" fill="#2a5298"/>
+  <text x="150" y="220" font-size="32" fill="white" text-anchor="middle">✉</text>
+  
+  <text x="210" y="200" font-size="18" fill="#666" font-weight="600">Email Address</text>
+  <text x="210" y="230" font-size="24" fill="#1e3c72" font-weight="bold">mmtw.cs@gmail.com</text>
+  
+  <!-- Separator -->
+  <line x1="100" y1="260" x2="700" y2="260" stroke="#e0e0e0" stroke-width="1"/>
+  
+  <!-- Business info -->
+  <text x="150" y="300" font-size="16" fill="#666">Contact us for:</text>
+  <text x="150" y="325" font-size="14" fill="#333">✓ Custom Ad Campaigns  ✓ Brand Partnerships  ✓ Promotional Deals</text>
+  
+  <!-- Footer CTA -->
+  <rect x="250" y="345" width="300" height="40" fill="#2a5298" rx="20"/>
+  <text x="400" y="370" font-size="16" font-weight="bold" fill="white" text-anchor="middle">REACH OUT TODAY</text>
+</svg>
