@@ -1,45 +1,103 @@
 <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+
   <defs>
-    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    <!-- Red Gradient Background -->
+    <linearGradient id="bgRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b0000"/>
+      <stop offset="50%" stop-color="#7a0000"/>
+      <stop offset="100%" stop-color="#c1121f"/>
+    </linearGradient>
+
+    <!-- Soft Glow -->
+    <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridRed" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="white" stroke-opacity="0.05"/>
+    </pattern>
+
+    <!-- Shadow -->
+    <filter id="shadowRed">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Button Gradient -->
+    <linearGradient id="btnRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d4d"/>
+      <stop offset="100%" stop-color="#ff9a9e"/>
     </linearGradient>
   </defs>
-  
-  <rect width="800" height="400" fill="url(#grad5)"/>
-  
-  <!-- Decorative circles -->
-  <circle cx="150" cy="150" r="40" fill="rgba(255,255,255,0.1)"/>
-  <circle cx="700" cy="250" r="50" fill="rgba(255,255,255,0.1)"/>
-  
-  <!-- Main title -->
-  <text x="400" y="70" font-size="44" font-weight="bold" fill="white" text-anchor="middle">GROW YOUR BUSINESS</text>
-  
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgRed)"/>
+  <rect width="800" height="400" fill="url(#gridRed)"/>
+
+  <!-- Glow Effects -->
+  <circle cx="180" cy="80" r="200" fill="url(#glowRed)"/>
+  <circle cx="650" cy="320" r="220" fill="url(#glowRed)"/>
+
+  <!-- Title -->
+  <text x="400" y="75" font-size="40" font-weight="900" fill="white" text-anchor="middle">
+    သင့်လုပ်ငန်းကို ကြီးထွားစေပါလား?
+  </text>
+
   <!-- Subtitle -->
-  <text x="400" y="110" font-size="24" fill="#90caf9" text-anchor="middle">Advertise with Us Today</text>
-  
-  <!-- Divider line -->
-  <line x1="150" y1="135" x2="650" y2="135" stroke="white" stroke-width="2" opacity="0.5"/>
-  
-  <!-- Contact section box -->
-  <rect x="100" y="160" width="600" height="180" fill="white" opacity="0.95" rx="15"/>
-  
-  <!-- Contact icon and label -->
-  <circle cx="150" cy="210" r="25" fill="#2a5298"/>
-  <text x="150" y="220" font-size="32" fill="white" text-anchor="middle">✉</text>
-  
-  <text x="210" y="200" font-size="18" fill="#666" font-weight="600">Email Address</text>
-  <text x="210" y="230" font-size="24" fill="#1e3c72" font-weight="bold">mmtw.cs@gmail.com</text>
-  
-  <!-- Separator -->
-  <line x1="100" y1="260" x2="700" y2="260" stroke="#e0e0e0" stroke-width="1"/>
-  
-  <!-- Business info -->
-  <text x="150" y="300" font-size="16" fill="#666">Contact us for:</text>
-  <text x="150" y="325" font-size="14" fill="#333">✓ Custom Ad Campaigns  ✓ Brand Partnerships  ✓ Promotional Deals</text>
-  
-  <!-- Footer CTA -->
-  <rect x="250" y="345" width="300" height="40" fill="#2a5298" rx="20"/>
-  <text x="400" y="370" font-size="16" font-weight="bold" fill="white" text-anchor="middle">REACH OUT TODAY</text>
+  <text x="400" y="110" font-size="18" fill="#ffd6d6" text-anchor="middle">
+    Customer များပိုမိုရရှိရန် • Brand တန်ဖိုးမြှင့်ရန် • ဝင်ငွေတိုးမြှင့်ရန်
+  </text>
+
+  <!-- Glass Card -->
+  <g filter="url(#shadowRed)">
+    <rect x="100" y="135" width="600" height="190" rx="24"
+          fill="white" fill-opacity="0.08"
+          stroke="white" stroke-opacity="0.25"/>
+  </g>
+
+  <!-- Highlight -->
+  <rect x="110" y="145" width="580" height="50" rx="20"
+        fill="white" opacity="0.06"/>
+
+  <!-- Email Icon -->
+  <circle cx="180" cy="210" r="30" fill="#ff4d4d"/>
+  <text x="180" y="220" font-size="24" fill="white" text-anchor="middle">✉</text>
+
+  <!-- Email Text -->
+  <text x="230" y="200" font-size="14" fill="#ffb3b3">
+    ဆက်သွယ်ရန် Email
+  </text>
+  <text x="230" y="230" font-size="22" fill="white" font-weight="700">
+    mmtw.cs@gmail.com
+  </text>
+
+  <!-- Divider -->
+  <line x1="140" y1="255" x2="660" y2="255"
+        stroke="white" stroke-opacity="0.2"/>
+
+  <!-- Services -->
+  <text x="160" y="285" font-size="15" fill="#ffe5e5">
+    ✓ ကြော်ငြာ Campaign များ ပြုလုပ်ပေးခြင်း
+  </text>
+  <text x="160" y="310" font-size="15" fill="#ffe5e5">
+    ✓ Brand Partnership များ
+  </text>
+  <text x="420" y="285" font-size="15" fill="#ffe5e5">
+    ✓ Promotion အထူးအစီအစဉ်များ
+  </text>
+
+  <!-- CTA Button -->
+  <g filter="url(#shadowRed)">
+    <rect x="260" y="325" width="280" height="50" rx="25" fill="url(#btnRed)"/>
+  </g>
+
+  <!-- Button Highlight -->
+  <rect x="265" y="328" width="270" height="20" rx="20" fill="white" opacity="0.25"/>
+
+  <!-- CTA Text -->
+  <text x="400" y="355" font-size="16" font-weight="800" fill="#5a0000" text-anchor="middle">
+    ယနေ့ပဲ ဆက်သွယ်လိုက်ပါ
+  </text>
+
 </svg>
