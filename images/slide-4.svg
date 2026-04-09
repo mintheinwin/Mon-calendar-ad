@@ -1,51 +1,78 @@
 <svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+
   <defs>
-    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+    <!-- Accent Red -->
+    <linearGradient id="accentRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d32f2f"/>
+      <stop offset="100%" stop-color="#ff5252"/>
     </linearGradient>
+
+    <!-- Soft Shadow -->
+    <filter id="softShadowPro">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
   </defs>
-  
-  <rect width="800" height="400" fill="url(#grad4)"/>
-  
-  <!-- Limited time banner -->
-  <rect x="50" y="40" width="700" height="80" fill="white" opacity="0.95" rx="15"/>
-  
-  <!-- Timer elements -->
-  <text x="400" y="85" font-size="32" font-weight="bold" fill="#fa709a" text-anchor="middle">LIMITED TIME OFFER</text>
-  
-  <!-- Countdown boxes -->
-  <g>
-    <!-- Days -->
-    <rect x="120" y="140" width="80" height="90" fill="white" opacity="0.9" rx="8"/>
-    <text x="160" y="200" font-size="42" font-weight="bold" fill="#fa709a" text-anchor="middle">03</text>
-    <text x="160" y="220" font-size="14" fill="#666" text-anchor="middle">DAYS</text>
-    
-    <!-- Hours -->
-    <rect x="240" y="140" width="80" height="90" fill="white" opacity="0.9" rx="8"/>
-    <text x="280" y="200" font-size="42" font-weight="bold" fill="#fa709a" text-anchor="middle">18</text>
-    <text x="280" y="220" font-size="14" fill="#666" text-anchor="middle">HOURS</text>
-    
-    <!-- Minutes -->
-    <rect x="360" y="140" width="80" height="90" fill="white" opacity="0.9" rx="8"/>
-    <text x="400" y="200" font-size="42" font-weight="bold" fill="#fa709a" text-anchor="middle">45</text>
-    <text x="400" y="220" font-size="14" fill="#666" text-anchor="middle">MINS</text>
-    
-    <!-- Seconds -->
-    <rect x="480" y="140" width="80" height="90" fill="white" opacity="0.9" rx="8"/>
-    <text x="520" y="200" font-size="42" font-weight="bold" fill="#fa709a" text-anchor="middle">23</text>
-    <text x="520" y="220" font-size="14" fill="#666" text-anchor="middle">SECS</text>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#ffffff"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="800" height="6" fill="url(#accentRed)"/>
+
+  <!-- Left Border Accent -->
+  <rect x="0" y="0" width="6" height="400" fill="#d32f2f"/>
+
+  <!-- Main Title -->
+  <text x="80" y="90" font-size="32" font-weight="800" fill="#222">
+    သင့်လုပ်ငန်းကို တိုးတက်အောင်လုပ်ပါ
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="120" font-size="16" fill="#666">
+    ကြော်ငြာဝန်ဆောင်မှုများဖြင့် Customer များပိုမိုရရှိနိုင်သည်
+  </text>
+
+  <!-- Divider -->
+  <line x1="80" y1="140" x2="720" y2="140" stroke="#eee"/>
+
+  <!-- Services Section -->
+  <text x="80" y="180" font-size="15" fill="#333">
+    ✓ ကြော်ငြာ Campaign စီမံခြင်း
+  </text>
+  <text x="80" y="210" font-size="15" fill="#333">
+    ✓ Brand Partnership များ
+  </text>
+  <text x="80" y="240" font-size="15" fill="#333">
+    ✓ Promotion အထူးအစီအစဉ်များ
+  </text>
+
+  <!-- Contact Card -->
+  <g filter="url(#softShadowPro)">
+    <rect x="480" y="160" width="260" height="120" rx="12" fill="#fafafa" stroke="#eee"/>
   </g>
-  
-  <!-- Main offer text -->
-  <text x="400" y="310" font-size="28" font-weight="bold" fill="white" text-anchor="middle">GET 50% OFF + FREE SHIPPING</text>
-  
+
+  <!-- Email Label -->
+  <text x="500" y="195" font-size="13" fill="#888">
+    ဆက်သွယ်ရန် Email
+  </text>
+
+  <!-- Email -->
+  <text x="500" y="220" font-size="16" font-weight="700" fill="#222">
+    mmtw.cs@gmail.com
+  </text>
+
   <!-- CTA Button -->
-  <rect x="300" y="330" width="200" height="50" fill="white" rx="25"/>
-  <text x="400" y="362" font-size="18" font-weight="bold" fill="#fa709a" text-anchor="middle">GRAB OFFER NOW</text>
-  
-  <!-- Decorative elements -->
-  <text x="650" y="100" font-size="40" fill="white">🎉</text>
-  <text x="100" y="320" font-size="40" fill="white">🔥</text>
+  <g filter="url(#softShadowPro)">
+    <rect x="80" y="280" width="220" height="42" rx="6" fill="#d32f2f"/>
+  </g>
+
+  <text x="190" y="306" font-size="15" font-weight="700" fill="white" text-anchor="middle">
+    ယနေ့ပဲ ဆက်သွယ်ပါ
+  </text>
+
+  <!-- Footer Note -->
+  <text x="80" y="350" font-size="12" fill="#999">
+    Professional Advertising Service
+  </text>
+
 </svg>
