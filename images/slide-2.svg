@@ -1,39 +1,84 @@
-<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
+<svg width="800" height="420" xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
     </linearGradient>
+
+    <!-- Accent -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+
+    <!-- Shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
   </defs>
-  
-  <rect width="800" height="400" fill="url(#grad2)"/>
-  
-  <!-- Discount badge background -->
-  <circle cx="700" cy="80" r="70" fill="white" opacity="0.95"/>
-  
-  <!-- Discount percentage -->
-  <text x="700" y="70" font-size="48" font-weight="bold" fill="#f5576c" text-anchor="middle">50%</text>
-  <text x="700" y="105" font-size="18" fill="#333" text-anchor="middle">OFF</text>
-  
-  <!-- Left side content -->
-  <text x="40" y="80" font-size="52" font-weight="bold" fill="white">SUMMER</text>
-  <text x="40" y="140" font-size="52" font-weight="bold" fill="white">SALE</text>
-  
-  <!-- Wavy line separator -->
-  <path d="M 40 160 Q 150 150, 260 160" stroke="white" stroke-width="3" fill="none"/>
-  
-  <!-- Description -->
-  <text x="40" y="210" font-size="20" fill="white">Shop the hottest styles</text>
-  <text x="40" y="240" font-size="20" fill="white">of the season at</text>
-  <text x="40" y="270" font-size="20" fill="white">unbeatable prices!</text>
-  
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="url(#bg)"/>
+
+  <!-- Top Accent -->
+  <rect x="0" y="0" width="800" height="5" fill="url(#accent)"/>
+
+  <!-- Main Headline -->
+  <text x="70" y="90" font-size="34" font-weight="800" fill="#f8fafc">
+    Grow Your Business Faster
+  </text>
+
+  <!-- Subheadline -->
+  <text x="70" y="125" font-size="16" fill="#94a3b8">
+    Smart advertising solutions to reach more customers
+  </text>
+
+  <!-- Divider -->
+  <line x1="70" y1="145" x2="730" y2="145" stroke="#1e293b"/>
+
+  <!-- Features -->
+  <text x="70" y="190" font-size="16" fill="#ef4444">•</text>
+  <text x="100" y="190" font-size="14" fill="#e2e8f0">
+    Campaign Management
+  </text>
+
+  <text x="70" y="220" font-size="16" fill="#ef4444">•</text>
+  <text x="100" y="220" font-size="14" fill="#e2e8f0">
+    Brand Partnerships
+  </text>
+
+  <text x="70" y="250" font-size="16" fill="#ef4444">•</text>
+  <text x="100" y="250" font-size="14" fill="#e2e8f0">
+    Promotions & Marketing Plans
+  </text>
+
+  <!-- Contact Card -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="170" width="260" height="110" rx="14" fill="#111827" stroke="#374151"/>
+  </g>
+
+  <!-- Contact Title -->
+  <text x="490" y="205" font-size="14" fill="#9ca3af">
+    Contact Us
+  </text>
+
+  <!-- Email -->
+  <text x="490" y="240" font-size="20" font-weight="800" fill="#ffffff">
+    mmtw.cs@gmail.com
+  </text>
+
   <!-- CTA Button -->
-  <rect x="40" y="310" width="180" height="50" fill="white" rx="25"/>
-  <text x="130" y="340" font-size="18" font-weight="bold" fill="#f5576c" text-anchor="middle">SHOP NOW</text>
-  
-  <!-- Decorative stars -->
-  <text x="500" y="100" font-size="30" fill="white">★ ★ ★</text>
-  <text x="520" y="300" font-size="25" fill="white">★</text>
-  <text x="650" y="320" font-size="25" fill="white">★</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="300" width="260" height="50" rx="10" fill="url(#accent)"/>
+  </g>
+
+  <text x="200" y="330" font-size="17" font-weight="700" fill="white" text-anchor="middle">
+    Start Advertising Today
+  </text>
+
+  <!-- Bottom Accent -->
+  <rect x="70" y="370" width="100" height="4" fill="#ef4444"/>
+
 </svg>
