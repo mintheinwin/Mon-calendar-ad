@@ -5,7 +5,11 @@ let slideTimer;
 document.addEventListener('DOMContentLoaded', function() {
     showSlide(slideIndex);
     autoSlide();
+    autoCenterView();
 });
+
+window.addEventListener('load', autoCenterView);
+window.addEventListener('resize', autoCenterView);
 
 // Next/previous controls
 function changeSlide(n) {
@@ -55,6 +59,29 @@ function autoSlide() {
         showSlide(slideIndex);
         autoSlide();
     }, 5000); // Change slide every 5 seconds
+}
+
+function autoCenterView() {
+    // In very short banner mode we keep content top-aligned.
+    if (window.matchMedia('(max-height: 140px)').matches) {
+        return;
+    }
+
+    const adContainer = document.querySelector('.ad-container');
+    if (!adContainer) {
+        return;
+    }
+
+    const containerRect = adContainer.getBoundingClientRect();
+    const absoluteTop = window.scrollY + containerRect.top;
+    const targetScrollTop = absoluteTop - (window.innerHeight / 2) + (containerRect.height / 2);
+    const maxScrollTop = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    const boundedScrollTop = Math.max(0, Math.min(targetScrollTop, maxScrollTop));
+
+    window.scrollTo({
+        top: boundedScrollTop,
+        behavior: 'smooth'
+    });
 }
 
 // Call to action button handler
